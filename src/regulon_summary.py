@@ -1,11 +1,11 @@
 import os
 import argparse
 
-from filters import filter_by_min_genes, filter_by_type, filter_interactions_by_regulon
+from .filters import filter_by_min_genes, filter_by_type, filter_interactions_by_regulon
 from .core import build_regulon, get_regulator_type
-from io_utils import load_interactions  
-from exporters import write_summary, write_sif
-from cli import parse_arguments
+from .io_utils import load_interactions  
+from .exporters import write_summary, write_sif
+from .cli import parse_arguments
 
 def main():
     """Función principal del programa."""
