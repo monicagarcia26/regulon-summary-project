@@ -39,7 +39,7 @@ def test_build_regulon_counts_activated_and_repressed_genes():
     assert regulon["CRP"]["activados"] == 2 # CRP activa 2 genes
     assert regulon["FNR"]["reprimidos"] == 1 # FNR reprime 1 gen
 
-def test_build_regulon_handles_duplicate_gene_for_same_regulator():
+def test_build_regulon_no_duplica_genes():
     # Si un mismo regulador y gen aparece dos veces, no debe duplicarse
     interactions = [
         ("CRP", "lacZ", "+"),
